@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 3%;
+}
+
+.menu {
+    width: 97%;
+    border-bottom: lightgrey 2px solid;
+}
+
+.menu p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 25vh;
+    height: 78vh;
+    margin-right: 20%;
+}
+.menuTools {
+    width: 100%;
+    height: 40%;
+}
+
+button {
+    width: 90%;
+    height:  25%;
+    padding: 0;
+    border: none;
+    background: white;
+    color: rgb(207, 209, 207);
+    text-align: start;
+}
+
+.menuTools button:hover {
+    color: grey;
+}
+
+button:focus {
+    outline: none;
+}
+
+.activeButton {
+    background: lightseagreen;
+}
+
+.tools button:nth-child(2){
+    border-bottom: lightgrey 1px solid;
+}
+
+.tools img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.menuTools, .pallete {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+
+    box-shadow: 0px 7px 6px 1px grey;
+}
+
+.pallete {
+    width: 100%;
+    height: 40%;
+}
+
+.pallete div {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+
+    background: grey;
+    border: black 1px solid;
+    border-radius: 50%;
+}
+
+.pallete button:focus {
+    color: lightgrey;
+    outline: none;
+}
+
+.defaultColorFirst div {
+    background: red;
+}
+
+.defaultColorSec div {
+    background: blue;
+}
+
+.previousColor div {
+    background: green;
+}
+
+.canvas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2%;
+
+    width: 75vh;
+    height: 75vh;
+    margin: auto 0;
+    
+}
+
+.canvas * {
+    background: lightgrey;
+}
+
+.circle {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.primary-canvas {
+    background: lightgray;
+}

@@ -1,0 +1,106 @@
+/*add frame functionality*/
+
+.frame-panel {
+    width: 25vh;
+    height: 100vh;
+    margin-left: 8%;
+    margin-top: 10px;
+    overflow-y: scroll;
+
+    box-shadow: 1px 7px 6px 1px grey;
+}
+.btn-addframe {
+    width: 60%;
+    height: 30px;
+    margin: 0 20%;
+
+    text-align: center;
+
+    border: grey 2px solid;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: grey;
+}
+
+.btn-addframe:hover {
+    background: lightgray;
+    color: white;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 25%;
+    margin: 10px auto;
+
+    background: #f3f1f1;
+    border: 2px solid lightgray;
+}
+.preview-frame {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2%;
+    width: 68%;
+    height: 68%;
+    margin: 0 auto;
+    border: 3px solid white;
+}
+
+.preview-frame * {
+  background: lightgray;
+}
+
+.number-frame,
+.delete-frame,
+.duplicate-frame,
+.replace-frame {
+    width: 15%;
+    height: 20px;
+
+    text-align: center;
+
+    background: grey;
+    color: black;
+}
+
+.delete-frame,
+.duplicate-frame,
+.replace-frame {
+    visibility: hidden;
+}
+
+.number-frame img,
+.delete-frame img,
+.duplicate-frame img,
+.replace-frame img {
+    margin: 0 auto;
+}
+
+.btn-frame{
+    display: flex;
+    justify-content: space-between;
+}
+
+.frame-current {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 25%;
+    margin: 10px auto;
+
+    background: lightgrey;
+    border: 2px yellow solid;
+}
+
+.frame-current .number-frame {
+  background: yellow;
+}
+
+

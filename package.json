@@ -1,0 +1,16 @@
+{
+  "name": "pallete",
+  "version": "1.1.0",
+  "description": "3 ui components (canvas, pallete, colors) with functionality",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js"
+  },
+  "author": "AlenaShkr",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

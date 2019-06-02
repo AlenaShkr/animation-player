@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pallete</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="frame/frame.css">
+    <link rel="stylesheet" href="previewComponent/preview.css">
+</head>
+<body>
+    <div class="menu">
+        <img src="icons/Shape.png"> <p>CodeJam - Palette</p>
+    </div>
+    <div class="tools">
+     <div class="menuTools">
+        <button class="bucket">
+            <img src="icons/i1.png">Paint bucket
+        </button>
+        <button class="chooseColor">
+            <img src="icons/i2.png"> Choose color
+        </button>
+        <button class="move">
+            <img src="icons/i3.png">Move
+        </button>
+        <button class="transform">
+            <img src="icons/i4.png">Transform
+        </button>
+     </div>
+     
+     <div class="pallete">
+        <button class="currentColor">
+            <div></div>Current color
+          </button>
+          <button class="previousColor">
+           <div></div>Previous color
+          </button>
+          <button class="defaultColorFirst">
+              <div></div> red
+          </button>
+          <button class="defaultColorSec">
+              <div></div>blue
+          </button>
+  
+     </div>
+
+     <div class="frame-panel">
+         
+        <div class="frame">
+            <div class="btn-frame">
+                    <div class="number-frame">1</div>
+                    <button class="delete-frame"><img src="icons/trash-solid.svg" alt="delete frame"></button>
+            </div>
+            <div class="preview-frame"></div>
+            <div class="btn-frame">
+                    <button class="replace-frame"><img src="icons/i3.png" alt="replace frame"></button>
+                    <button class="duplicate-frame"><img src="icons/copy-solid.svg" alt="duplicate frame"></button>
+            </div>
+        </div>
+        
+        
+        <button class="btn-addframe">Add frame</button> 
+    </div>
+
+    </div>
+    
+    <div class="canvas">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="preview">
+        <div class="preview-animation"></div>
+        <div class="fps-panel">
+            <div class="fps">2FPS</div>
+            <div class="fps">4FPS</div>
+            <div class="fps">8FPS</div>
+            <div class="fps">12FPS</div>
+            <div class="fps">24FPS</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="index.js" ></script>  
+    <script type="text/javascript" src="frame/frame.js" ></script>
+    <script type="text/javascript" src="previewComponent/preview.js" ></script>    
+</body>
+ 
+</html>
